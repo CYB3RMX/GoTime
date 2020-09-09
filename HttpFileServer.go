@@ -8,7 +8,7 @@ import (
 
 func main() {
 	// init variables
-	directory := "/home/sysk1ll3r/"
+	directory := [PUT YOUR HOME DIRECTORY OR ANYTHING YOU WANT]
 	var bindAddr string
 
 	// Lets ask the user
