@@ -1,3 +1,4 @@
+/* This program allows to you creating a HTTP file server */
 package main
 
 import (

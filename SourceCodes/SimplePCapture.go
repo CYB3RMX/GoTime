@@ -1,3 +1,4 @@
+/* This program does only capturing packets and shows captured ones in raw format */
 package main
 
 import (

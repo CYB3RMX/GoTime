@@ -1,3 +1,4 @@
+/* This program does enumerating network devices */
 package main
 
 import (
