@@ -9,12 +9,16 @@ import (
 
 func main() {
 	// init variables
-	directory := [PUT YOUR HOME DIRECTORY OR ANYTHING YOU WANT]
+	var directory string
 	var bindAddr string
 
 	// Lets ask the user
 	fmt.Printf("[*] Enter Bind Address: ")
 	fmt.Scanln(&bindAddr)
+
+    // Enter directory to serve
+    fmt.Printf("[*] Enter directory: ")
+    fmt.Scanln(&directory)
 
 	// Parsing bind address
 	bino := fmt.Sprintf("%s:9000", bindAddr)
