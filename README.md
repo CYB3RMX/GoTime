@@ -1,2 +1,2 @@
-# GoTime
-Notes and some tools about Golang.
+# GoToolkit
+Some useful tools about Golang.
