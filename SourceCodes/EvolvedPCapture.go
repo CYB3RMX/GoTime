@@ -13,7 +13,6 @@ import (
 
 // Setting variables
 var (
-    netDevice string = "wlan0"
     snapshotLen int32 = 1024
     promisc bool = false
     err error
@@ -22,6 +21,11 @@ var (
 )
 
 func main(){
+    // Choosing interface to sniff
+    var netDevice string
+    fmt.Printf("[*] Enter network interface to sniff: ")
+    fmt.Scanln(&netDevice)
+    
     // Accessing network device
     handle, err := pcap.OpenLive(netDevice, snapshotLen, promisc, timeout)
 
