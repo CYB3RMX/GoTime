@@ -12,16 +12,21 @@ import (
 
 // Global variables
 var (
-	netDevice   string = "wlan0"
-	snapshotLen int32  = 1024
-	promisc     bool   = false
+	snapshotLen int32 = 1024
+	promisc     bool  = false
 	err         error
 	timeout     time.Duration = 30 * time.Second
 	handle      *pcap.Handle
 )
 
 func main() {
+	//Choosing iface
+	var netDevice string
+	fmt.Printf("[*] Enter network interface to sniff: ")
+	fmt.Scanln(&netDevice)
+
 	// Open device
+	fmt.Printf("[*] Packet capturing starts on %s\n", netDevice)
 	handle, err := pcap.OpenLive(netDevice, snapshotLen, promisc, timeout)
 	if err != nil {
 		log.Fatal(err)
