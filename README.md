@@ -1,2 +1,2 @@
 # GoToolkit
-Some useful tools about Golang.
+Some useful tools written with Golang for training.
