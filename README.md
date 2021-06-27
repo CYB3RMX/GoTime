@@ -1,5 +1,5 @@
 # GoToolkit
-Some useful tools written with Golang for training.
+Some useful tools or snippets written with Golang for training.
 
 ## Topics
 - <a href="https://github.com/CYB3RMX/GoToolkit/blob/master/SourceCodes/fileoperations.go">File Operations</a>
